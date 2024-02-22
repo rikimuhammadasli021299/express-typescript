@@ -85,3 +85,396 @@ TSError: ⨯ Unable to compile TypeScript:
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
 [LOGGER] error : Error pad file src/controllers/barang.controller.ts : getAllBarang -  Error
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; name: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/user.service.ts[0m:[93m6[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+  Type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.
+    Property 'passwrod' is missing in type '{ user_id: string; email: string; nama: string; password: string; confirmPassword?: string | undefined; role: string; }' but required in type 'UserCreateInput'.
+
+[7m6[0m     data: {
+[7m [0m [91m    ~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m3084[0m:[93m5[0m
+    [7m3084[0m     passwrod: string
+    [7m    [0m [96m    ~~~~~~~~[0m
+    'passwrod' is declared here.
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2655[0m:[93m5[0m
+    [7m2655[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m23[0m:[93m11[0m - [91merror[0m[90m TS2551: [0mProperty 'password' does not exist on type 'UserType'. Did you mean 'passwrod'?
+
+[7m23[0m     value.password = encrypt(value.password)
+[7m  [0m [91m          ~~~~~~~~[0m
+
+  [96msrc/types/user.type.ts[0m:[93m5[0m:[93m3[0m
+    [7m5[0m   passwrod: string
+    [7m [0m [96m  ~~~~~~~~[0m
+    'passwrod' is declared here.
+[96msrc/controllers/user.controller.ts[0m:[93m23[0m:[93m36[0m - [91merror[0m[90m TS2551: [0mProperty 'password' does not exist on type 'UserType'. Did you mean 'passwrod'?
+
+[7m23[0m     value.password = encrypt(value.password)
+[7m  [0m [91m                                   ~~~~~~~~[0m
+
+  [96msrc/types/user.type.ts[0m:[93m5[0m:[93m3[0m
+    [7m5[0m   passwrod: string
+    [7m [0m [96m  ~~~~~~~~[0m
+    'passwrod' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m23[0m:[93m11[0m - [91merror[0m[90m TS2551: [0mProperty 'password' does not exist on type 'UserType'. Did you mean 'passwrod'?
+
+[7m23[0m     value.password = encrypt(value.password)
+[7m  [0m [91m          ~~~~~~~~[0m
+
+  [96msrc/types/user.type.ts[0m:[93m5[0m:[93m3[0m
+    [7m5[0m   passwrod: string
+    [7m [0m [96m  ~~~~~~~~[0m
+    'passwrod' is declared here.
+[96msrc/controllers/user.controller.ts[0m:[93m23[0m:[93m36[0m - [91merror[0m[90m TS2551: [0mProperty 'password' does not exist on type 'UserType'. Did you mean 'passwrod'?
+
+[7m23[0m     value.password = encrypt(value.password)
+[7m  [0m [91m                                   ~~~~~~~~[0m
+
+  [96msrc/types/user.type.ts[0m:[93m5[0m:[93m3[0m
+    [7m5[0m   passwrod: string
+    [7m [0m [96m  ~~~~~~~~[0m
+    'passwrod' is declared here.
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : Error pada file src/controller/user.controller.ts : registerUser - data and salt arguments required
+[LOGGER] error : Error pada file src/controller/user.controller.ts : registerUser - 
+Invalid `prisma.user.create()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\user.service.ts:5:34
+
+  2 import prisma from '../utils/client'
+  3 
+  4 export const createUser = async (payload: UserType): Promise<any> => {
+→ 5   const data = await prisma.user.create({
+        data: {
+          email: "rikimuhammadnurhidayat@gmail.com",
+          nama: "riki",
+          passwrod: "$2b$10$uEMPZBhLf.ZHr0KStmFdeu.0AMjom7P52o.TObUrFnSih0fZezYoa",
+      +   password: String
+        }
+      })
+
+Argument `password` is missing.
+[LOGGER] error : Error pada file src/controller/user.controller.ts : registerUser - 
+Invalid `prisma.user.create()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\user.service.ts:5:34
+
+  2 import prisma from '../utils/client'
+  3 
+  4 export const createUser = async (payload: UserType): Promise<any> => {
+→ 5   const data = await prisma.user.create({
+        data: {
+          email: "rikimuhammadnurhidayat@gmail.com",
+          nama: "riki",
+          password: "$2b$10$AMOLa1e.EinSIilxkt6WF.hZS7MqUdN.N.P0SgJAHsbE0C4i8.2mG",
+      +   passwrod: String
+        }
+      })
+
+Argument `passwrod` is missing.

@@ -18,7 +18,7 @@ export const getAllBarang = async (
     const data = await getBarang()
     return res.status(200).json({
       error: null,
-      message: 'Pengambilan semua data berhasi',
+      message: 'Pengambilan semua data berhasil',
       data
     })
   } catch (error: Error | any) {
