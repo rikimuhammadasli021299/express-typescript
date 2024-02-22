@@ -1,0 +1,86 @@
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m7[0m:[93m3[0m - [91merror[0m[90m TS2724: [0m'"../services/barang.service"' has no exported member named 'inserDataBarang'. Did you mean 'insertBarang'?
+
+[7m7[0m   inserDataBarang
+[7m [0m [91m  ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/barang.service.ts[0m:[93m14[0m:[93m14[0m
+    [7m14[0m export const insertBarang = async (payload: BarangType): Promise<any> => {
+    [7m  [0m [96m             ~~~~~~~~~~~~[0m
+    'insertBarang' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m7[0m:[93m3[0m - [91merror[0m[90m TS2724: [0m'"../services/barang.service"' has no exported member named 'inserDataBarang'. Did you mean 'insertBarang'?
+
+[7m7[0m   inserDataBarang
+[7m [0m [91m  ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/services/barang.service.ts[0m:[93m14[0m:[93m14[0m
+    [7m14[0m export const insertBarang = async (payload: BarangType): Promise<any> => {
+    [7m  [0m [96m             ~~~~~~~~~~~~[0m
+    'insertBarang' is declared here.
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m101[0m:[93m24[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 1.
+
+[7m101[0m     const data = await updateDataBarang({ ...value, id: parseInt(id) })
+[7m   [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/controllers/barang.controller.ts[0m:[93m86[0m:[93m3[0m
+    [7m86[0m   res: Response,
+    [7m  [0m [96m  ~~~~~~~~~~~~~[0m
+    An argument for 'res' was not provided.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m101[0m:[93m24[0m - [91merror[0m[90m TS2554: [0mExpected 3 arguments, but got 1.
+
+[7m101[0m     const data = await updateDataBarang({ ...value, id: parseInt(id) })
+[7m   [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/controllers/barang.controller.ts[0m:[93m86[0m:[93m3[0m
+    [7m86[0m   res: Response,
+    [7m  [0m [96m  ~~~~~~~~~~~~~[0m
+    An argument for 'res' was not provided.
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m125[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'number'.
+
+[7m125[0m     const data = await deleteBarang(id)
+[7m   [0m [91m                                    ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/barang.controller.ts[0m:[93m125[0m:[93m37[0m - [91merror[0m[90m TS2345: [0mArgument of type 'string' is not assignable to parameter of type 'number'.
+
+[7m125[0m     const data = await deleteBarang(id)
+[7m   [0m [91m                                    ~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)

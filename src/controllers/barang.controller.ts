@@ -1,7 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { type NextFunction, type Request, type Response } from 'express'
 import { inputBarangValidation } from '../validations/barang.validation'
-import { getBarang } from '../services/barang.service'
+import {
+  deleteBarang,
+  getBarang,
+  getBarangById,
+  insertBarang,
+  updateBarang
+} from '../services/barang.service'
 
 export const getAllBarang = async (
   req: Request,
@@ -18,17 +24,39 @@ export const getAllBarang = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : ${error.message}`
+        `Error pad file src/controllers/barang.controller.ts : getAllBarang ${error.message}`
       )
     )
   }
 }
 
-export const insertBarang = (
+export const getDataBarangById = async (
   req: Request,
   res: Response,
   next: NextFunction
-): any => {
+): Promise<any> => {
+  try {
+    const { id } = req.params
+    const barang = await getBarangById(parseInt(id))
+    return res.status(200).json({
+      error: null,
+      message: 'Pengambilan data sukses',
+      data: barang
+    })
+  } catch (error: Error | any) {
+    next(
+      new Error(
+        `Error pad file src/controllers/barang.controller.ts : getDataBarangById ${error.message}`
+      )
+    )
+  }
+}
+
+export const insertDataBarang = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<any> => {
   const { error, value } = inputBarangValidation(req.body)
   try {
     if (error != null) {
@@ -39,15 +67,71 @@ export const insertBarang = (
       })
     }
 
+    const barang = await insertBarang(value)
+
     return res.status(200).json({
       error: null,
       message: 'Input data sukses',
-      data: value
+      data: barang
     })
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : ${error.message}`
+        `Error pad file src/controllers/barang.controller.ts : insertDataBarang ${error.message}`
+      )
+    )
+  }
+}
+
+export const updateDataBarang = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<any> => {
+  try {
+    const { id } = req.params
+    const { error, value } = inputBarangValidation(req.body)
+
+    if (error != null) {
+      return res.status(400).json({
+        error: error.details[0].message,
+        message: 'Input data gagal',
+        data: value
+      })
+    }
+
+    const data = await updateBarang({ ...value, id: parseInt(id) })
+    return res.status(200).json({
+      error: null,
+      message: 'Update data sukses',
+      data
+    })
+  } catch (error: Error | any) {
+    next(
+      new Error(
+        `Error pad file src/controllers/barang.controller.ts : updateDataBarang ${error.message}`
+      )
+    )
+  }
+}
+
+export const deleteDataBarang = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<any> => {
+  try {
+    const { id } = req.params
+    const data = await deleteBarang(parseInt(id))
+    return res.status(200).json({
+      error: null,
+      message: 'Delete data sukses',
+      data
+    })
+  } catch (error: Error | any) {
+    next(
+      new Error(
+        `Error pad file src/controllers/barang.controller.ts : deleteDataBarang ${error.message}`
       )
     )
   }
