@@ -24,7 +24,7 @@ export const getAllBarang = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : getAllBarang ${error.message}`
+        `Error pada file src/controllers/barang.controller.ts : getAllBarang -  ${error.message}`
       )
     )
   }
@@ -46,7 +46,7 @@ export const getDataBarangById = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : getDataBarangById ${error.message}`
+        `Error pada file src/controllers/barang.controller.ts : getDataBarangById - ${error.message}`
       )
     )
   }
@@ -77,7 +77,7 @@ export const insertDataBarang = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : insertDataBarang ${error.message}`
+        `Error pada file src/controllers/barang.controller.ts : insertDataBarang - ${error.message}`
       )
     )
   }
@@ -109,7 +109,7 @@ export const updateDataBarang = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : updateDataBarang ${error.message}`
+        `Error pada file src/controllers/barang.controller.ts : updateDataBarang - ${error.message}`
       )
     )
   }
@@ -131,7 +131,7 @@ export const deleteDataBarang = async (
   } catch (error: Error | any) {
     next(
       new Error(
-        `Error pad file src/controllers/barang.controller.ts : deleteDataBarang ${error.message}`
+        `Error pada file src/controllers/barang.controller.ts : deleteDataBarang - ${error.message}`
       )
     )
   }
