@@ -7,13 +7,30 @@ import {
   insertDataBarang,
   updateDataBarang
 } from '../controllers/barang.controller'
+import { authenticate } from '../controllers/error.controller'
 
 const barangRouter = Router()
 
-barangRouter.get('/barang', expressAsyncHandler(getAllBarang))
-barangRouter.get('/barang/:id', expressAsyncHandler(getDataBarangById))
-barangRouter.post('/barang', expressAsyncHandler(insertDataBarang))
-barangRouter.put('/barang/:id', expressAsyncHandler(updateDataBarang))
-barangRouter.delete('/barang/:id', expressAsyncHandler(deleteDataBarang))
+barangRouter.get('/barang', authenticate, expressAsyncHandler(getAllBarang))
+barangRouter.get(
+  '/barang/:id',
+  authenticate,
+  expressAsyncHandler(getDataBarangById)
+)
+barangRouter.post(
+  '/barang',
+  authenticate,
+  expressAsyncHandler(insertDataBarang)
+)
+barangRouter.put(
+  '/barang/:id',
+  authenticate,
+  expressAsyncHandler(updateDataBarang)
+)
+barangRouter.delete(
+  '/barang/:id',
+  authenticate,
+  expressAsyncHandler(deleteDataBarang)
+)
 
 export default barangRouter

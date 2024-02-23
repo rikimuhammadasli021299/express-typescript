@@ -20,4 +20,30 @@ const generateRefreshToken = (user: any): string => {
   })
 }
 
-export { generateAccessToken, generateRefreshToken }
+const verifyRefreshToken = (token: string): any => {
+  try {
+    return jsonWebToken.verify(token, String(process.env.JWT_REFRESH_SECRET))
+  } catch (error) {
+    return null
+  }
+}
+
+const verifyAccessToken = (token: string): any => {
+  try {
+    return jsonWebToken.verify(token, String(process.env.JWT_SECRET))
+  } catch (error) {
+    return null
+  }
+}
+
+const parseJWT = (token: string): any => {
+  return JSON.parse(Buffer.from(token.split('.')[1], 'base64').toString())
+}
+
+export {
+  generateAccessToken,
+  generateRefreshToken,
+  verifyRefreshToken,
+  verifyAccessToken,
+  parseJWT
+}

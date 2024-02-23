@@ -1,5 +1,6 @@
 import { type NextFunction, type Request, type Response } from 'express'
 import { logger } from '../utils/winston'
+import { verifyAccessToken } from '../utils/jwt'
 
 export const errorHandling = (
   err: any,
@@ -26,4 +27,31 @@ export const notFound = (
     message: 'Halaman tidak ditemukan',
     data: null
   })
+}
+
+export const authenticate = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): any => {
+  const authHeader = req.headers.authorization
+  const token = authHeader?.split(' ')[1]
+  if (token === undefined) {
+    return res.status(401).json({
+      error: 'Unauthorized',
+      message: 'Tidak dapat akses',
+      data: null
+    })
+  }
+
+  const user = verifyAccessToken(String(token))
+  if (user === null) {
+    return res.status(401).json({
+      error: 'Token tidak valid',
+      message: 'Verifikasi token gagal',
+      data: null
+    })
+  }
+
+  next()
 }
