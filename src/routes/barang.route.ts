@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { Router } from 'express'
-import expressAsyncHandler from 'express-async-handler'
 import {
   deleteDataBarang,
   getAllBarang,
@@ -11,26 +11,10 @@ import { authenticate } from '../controllers/error.controller'
 
 const barangRouter = Router()
 
-barangRouter.get('/barang', authenticate, expressAsyncHandler(getAllBarang))
-barangRouter.get(
-  '/barang/:id',
-  authenticate,
-  expressAsyncHandler(getDataBarangById)
-)
-barangRouter.post(
-  '/barang',
-  authenticate,
-  expressAsyncHandler(insertDataBarang)
-)
-barangRouter.put(
-  '/barang/:id',
-  authenticate,
-  expressAsyncHandler(updateDataBarang)
-)
-barangRouter.delete(
-  '/barang/:id',
-  authenticate,
-  expressAsyncHandler(deleteDataBarang)
-)
+barangRouter.get('/barang', authenticate, getAllBarang)
+barangRouter.get('/barang/:id', authenticate, getDataBarangById)
+barangRouter.post('/barang', authenticate, insertDataBarang)
+barangRouter.put('/barang/:id', authenticate, updateDataBarang)
+barangRouter.delete('/barang/:id', authenticate, deleteDataBarang)
 
 export default barangRouter

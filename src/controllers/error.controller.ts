@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-invalid-void-type */
 import { type NextFunction, type Request, type Response } from 'express'
 import { logger } from '../utils/winston'
 import { verifyAccessToken } from '../utils/jwt'
 
 export const errorHandling = (
-  err: any,
+  err: Error,
   req: Request,
   res: Response,
   next: NextFunction
@@ -33,7 +34,7 @@ export const authenticate = (
   req: Request,
   res: Response,
   next: NextFunction
-): any => {
+): Response | void => {
   const authHeader = req.headers.authorization
   const token = authHeader?.split(' ')[1]
   if (token === undefined) {

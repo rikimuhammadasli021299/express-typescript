@@ -12,7 +12,7 @@ export const registerUser = async (
   req: Request,
   res: Response,
   next: NextFunction
-): Promise<any> => {
+): Promise<Response | undefined> => {
   try {
     const { error, value } = inputUserValidation(req.body)
     if (error != null) {
@@ -33,10 +33,10 @@ export const registerUser = async (
       message: 'Input data berhasil',
       data: user
     })
-  } catch (error: Error | any) {
+  } catch (error: Error | unknown) {
     next(
       new Error(
-        `Error pada file src/controller/user.controller.ts : registerUser - ${error.message}`
+        `Error pada file src/controller/user.controller.ts : registerUser - ${String((error as Error).message)}`
       )
     )
   }
@@ -46,7 +46,7 @@ export const loginUser = async (
   req: Request,
   res: Response,
   next: NextFunction
-): Promise<any> => {
+): Promise<Response | undefined> => {
   try {
     const { error, value } = loginUserValidation(req.body)
     if (error != null) {
@@ -74,25 +74,27 @@ export const loginUser = async (
       })
     }
 
-    const usr = {
-      id: user.id,
-      email: user.email,
-      nama: user.nama,
-      role: user.role
-    }
-    const accessToken = generateAccessToken(usr)
-    const refreshToken = generateRefreshToken(usr)
+    // const usr = {
+    //   id: user.user_id,
+    //   email: user.email,
+    //   nama: user.nama,
+    //   role: user.role
+    // }
+
+    user.password = 'xxxxx'
+    const accessToken = generateAccessToken(user)
+    const refreshToken = generateRefreshToken(user)
     return res.status(200).json({
       error: null,
       message: 'Login sukses',
-      data: usr,
+      data: user,
       accessToken,
       refreshToken
     })
-  } catch (error: Error | any) {
+  } catch (error: Error | unknown) {
     next(
       new Error(
-        `Error pada file src/controller/user.controller.ts : loginUser - ${error.message}`
+        `Error pada file src/controller/user.controller.ts : loginUser - ${String((error as Error).message)}`
       )
     )
   }

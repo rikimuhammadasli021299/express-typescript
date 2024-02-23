@@ -1,1 +1,397 @@
 [LOGGER] error : Cannot set headers after they are sent to the client
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/barang.service.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2739: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }[]' is missing the following properties from type 'BarangType': id, nama, jumlah, harga
+
+[7m6[0m   return data
+[7m [0m [91m  ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/barang.service.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2739: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }[]' is missing the following properties from type 'BarangType': id, nama, jumlah, harga
+
+[7m6[0m   return data
+[7m [0m [91m  ~~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m78[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m78[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m45[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m83[0m     const accessToken = generateAccessToken(usr)
+[7m  [0m [91m                                            ~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m84[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m84[0m     const refreshToken = generateRefreshToken(usr)
+[7m  [0m [91m                                              ~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m14[0m:[93m63[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m14[0m barangRouter.get('/barang', authenticate, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                              ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m18[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m18[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m23[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m23[0m   expressAsyncHandler(insertDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m28[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m28[0m   expressAsyncHandler(updateDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m33[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m33[0m   expressAsyncHandler(deleteDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m14[0m:[93m63[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m14[0m barangRouter.get('/barang', authenticate, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                              ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m18[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m18[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m23[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m23[0m   expressAsyncHandler(insertDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m28[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m28[0m   expressAsyncHandler(updateDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m33[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m33[0m   expressAsyncHandler(deleteDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m59[0m:[93m34[0m - [91merror[0m[90m TS2345: [0mArgument of type 'UserType | undefined' is not assignable to parameter of type 'UserType'.
+  Type 'undefined' is not assignable to type 'UserType'.
+
+[7m59[0m     const user = await userLogin(value)
+[7m  [0m [91m                                 ~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m68[0m:[93m18[0m - [91merror[0m[90m TS18048: [0m'value' is possibly 'undefined'.
+
+[7m68[0m     if (!compare(value.password, user.password)) {
+[7m  [0m [91m                 ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m59[0m:[93m34[0m - [91merror[0m[90m TS2345: [0mArgument of type 'UserType | undefined' is not assignable to parameter of type 'UserType'.
+  Type 'undefined' is not assignable to type 'UserType'.
+
+[7m59[0m     const user = await userLogin(value)
+[7m  [0m [91m                                 ~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m68[0m:[93m18[0m - [91merror[0m[90m TS18048: [0m'value' is possibly 'undefined'.
+
+[7m68[0m     if (!compare(value.password, user.password)) {
+[7m  [0m [91m                 ~~~~~[0m
+
+    at createTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\node_modules\.pnpm\ts-node@10.9.2_@types+node@20.11.19_typescript@5.3.3\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
