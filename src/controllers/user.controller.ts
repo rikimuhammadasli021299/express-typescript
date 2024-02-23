@@ -6,7 +6,12 @@ import {
 } from '../validations/user.validation'
 import { createUser, userLogin } from '../services/user.service'
 import { compare, encrypt } from '../utils/bcrypt'
-import { generateAccessToken, generateRefreshToken } from '../utils/jwt'
+import {
+  generateAccessToken,
+  generateRefreshToken,
+  parseJWT,
+  verifyRefreshToken
+} from '../utils/jwt'
 
 export const registerUser = async (
   req: Request,
@@ -95,6 +100,63 @@ export const loginUser = async (
     next(
       new Error(
         `Error pada file src/controller/user.controller.ts : loginUser - ${String((error as Error).message)}`
+      )
+    )
+  }
+}
+
+export const refreshToken = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<Response | undefined> => {
+  try {
+    const authHeader = req.headers.authorization
+    const token = authHeader?.split(' ')[1]
+
+    if (token === undefined) {
+      return res.status(401).json({
+        error: 'Unauthorized',
+        message: 'Tidak dapat akses',
+        data: null
+      })
+    }
+
+    const verify = verifyRefreshToken(String(token))
+
+    if (verify === null) {
+      return res.status(401).json({
+        error: 'Token tidak valid',
+        message: 'Verifikasi refresh token gagal',
+        data: null
+      })
+    }
+
+    const data = parseJWT(token)
+    const user = await userLogin(data)
+    if (user === null) {
+      return res.status(404).json({
+        error: 'Token tidak valid',
+        message: 'Refresh token gagal',
+        data: null
+      })
+    }
+
+    user.password = 'xxxxx'
+
+    const accessToken = generateAccessToken(user)
+    const refreshToken = generateRefreshToken(user)
+    return res.status(200).json({
+      error: null,
+      message: 'Refresh token sukses',
+      data: user,
+      accessToken,
+      refreshToken
+    })
+  } catch (error: Error | unknown) {
+    next(
+      new Error(
+        `Error pada file src/controller/user.controller.ts : refreshToken - ${String((error as Error).message)}`
       )
     )
   }
