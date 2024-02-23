@@ -395,3 +395,66 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1119:32)
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+[LOGGER] error : Error pada file src/controllers/barang.controller.ts : deleteDataBarang - 
+Invalid `prisma.barang.delete()` invocation in
+D:\Bootcamp PijarCamp\materi\learn-typescript\api\01-create-project\src\services\barang.service.ts:32:42
+
+  29 }
+  30 
+  31 export const deleteBarang = async (id: number): Promise<BarangType> => {
+→ 32   const data = await prisma.barang.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.

@@ -13,6 +13,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": ["**/build/*", "**/node_modules/*", "**/public/*"],
+  "ignorePatterns": [
+    "**/build/*",
+    "**/node_modules/*",
+    "**/public/*",
+    "jest.config.js"
+  ],
   "rules": {}
 }
