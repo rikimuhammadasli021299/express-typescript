@@ -10,3 +10,13 @@ export const createUser = async (payload: UserType): Promise<any> => {
 
   return data
 }
+
+export const userLogin = async (payload: UserType): Promise<any> => {
+  const data = await prisma.user.findUnique({
+    where: {
+      email: payload.email
+    }
+  })
+
+  return data
+}
